@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<title>Sajjad's Games — Play Free</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    background: #0a0a14;
+    color: #f2f2f7;
+    min-height: 100vh;
+  }
+  header {
+    text-align: center;
+    padding: 40px 16px 8px;
+  }
+  header h1 {
+    font-size: clamp(2rem, 7vw, 3rem);
+    font-weight: 800;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #22d3ee, #a78bfa, #f472b6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  header p {
+    margin-top: 8px;
+    color: #9a9aad;
+    font-size: 1rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 28px 16px 48px;
+  }
+  .card {
+    background: #151528;
+    border: 1px solid #262640;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+  }
+  .card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    background: #050510;
+  }
+  .card-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+  }
+  .card-body h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  .card-body p {
+    color: #b9b9cc;
+    font-size: 0.95rem;
+    line-height: 1.45;
+    flex: 1;
+  }
+  .play {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: linear-gradient(90deg, #22d3ee, #818cf8);
+    color: #06060f;
+    font-weight: 800;
+    font-size: 1.05rem;
+    letter-spacing: 0.5px;
+    padding: 13px 16px;
+    border-radius: 12px;
+    margin-top: 6px;
+  }
+  .play:active { transform: scale(0.98); }
+  @media (max-width: 480px) {
+    .grid { grid-template-columns: 1fr; gap: 16px; padding: 20px 14px 40px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>&#127918; Sajjad's Games</h1>
+  <p>Pick a game and play &mdash; free, right in your browser!</p>
+</header>
+
+<main class="grid">
+  <article class="card">
+    <img src="images/snake.png" alt="Neon Snake Rush cover">
+    <div class="card-body">
+      <h2>Neon Snake Rush</h2>
+      <p>3D snake arena &mdash; eat, grow, trap, survive. Online multiplayer!</p>
+      <a class="play" href="https://sajjadalitalpur.github.io/NS-Rush/" target="_blank" rel="noopener">&#9654; PLAY</a>
+    </div>
+  </article>
+
+  <article class="card">
+    <img src="images/devil.png" alt="Devil's Door Run cover">
+    <div class="card-body">
+      <h2>Devil's Door Run</h2>
+      <p>3D platformer &mdash; jump the traps, escape the devil's door!</p>
+      <a class="play" href="https://sajjadalitalpur.github.io/ouch/" target="_blank" rel="noopener">&#9654; PLAY</a>
+    </div>
+  </article>
+
+  <article class="card">
+    <img src="images/cube-strike.jpg" alt="Cube Strike Online cover">
+    <div class="card-body">
+      <h2>Cube Strike Online</h2>
+      <p>Blocky 3D arena FPS &mdash; 10-player Quick Match, TDM 5v5, bots!</p>
+      <a class="play" href="https://sajjadalitalpur.github.io/Cube-Strike-Pro/" target="_blank" rel="noopener">&#9654; PLAY</a>
+    </div>
+  </article>
+
+  <article class="card">
+    <img src="images/rickshaw.png" alt="Rickshaw Rush cover">
+    <div class="card-body">
+      <h2>Rickshaw Rush</h2>
+      <p>3D endless rickshaw runner through the bazaar!</p>
+      <a class="play" href="https://muse.ai/s/rickshaw-rush-xea6xkxbzxbxhaxvxm/Uq_AKn0L6rgEHxHK0_TWjvrcHkoyu-R9GqYUcpWTjUI" target="_blank" rel="noopener">&#9654; PLAY</a>
+    </div>
+  </article>
+
+  <article class="card">
+    <img src="images/brainpop.png" alt="BrainPop Blitz cover">
+    <div class="card-body">
+      <h2>BrainPop Blitz</h2>
+      <p>Fun brain mini-games for kids &mdash; play on Android!</p>
+      <a class="play" href="https://play.google.com/store/apps/details?id=com.edwas.brainpopblitz" target="_blank" rel="noopener">GET ON PLAY STORE</a>
+    </div>
+  </article>
+</main>
+</body>
+</html>
